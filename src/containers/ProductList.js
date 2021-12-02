@@ -3,7 +3,7 @@ import ProductItem from '../components/ProductItem';
 import '../styles/ProductList.scss';
 import useGetProducts from '../hooks/useGetProducts';
 
-const API = 'https://fakestoreapi.com/products'
+const API = 'https://tastifypruebasv1.herokuapp.com/api/products/'
 function ProductList (){
     const products = useGetProducts(API)
 	return (

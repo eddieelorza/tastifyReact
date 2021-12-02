@@ -2,25 +2,40 @@ import React, {useContext} from 'react';
 import '../styles/ProductItem.scss';
 import AppContext from '../context/AppContext';
 import addCart from '@icons/bt_add_to_cart.svg'
+import addedCart from '@icons/bt_added_to_cart.svg'
 
 function ProductItem({product}){
-	const { addToCart } = useContext(AppContext);
+	const { state, addToCart } = useContext(AppContext);
 
 	const handleClick = item => {
+
+
 		addToCart(item);
 	}
 
 	return (
 		<div className="ProductItem">
-			<img src='https://images.pexels.com/photos/803290/pexels-photo-803290.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' alt={product.name} />
+			<img src={product.image} alt={product.name} />
 			<div className="product-info">
 				<div>
+					<p>{product.name}</p>
 					<p>${product.price}</p>
-					<p>pizza</p>
+					
 				</div>
-				<figure onClick={() => handleClick(product)} >
-					<img src={addCart} alt="" />
-				</figure>
+				<section onClick={() => handleClick(product)}>
+				{  state.cart.includes(product)  ?
+					<div className="add--box" >
+									<a  className="">Agregado</a>
+				    </div> :
+						<div className="add--box" >
+						<a  className="">Agregar al Carrito</a>
+		        </div> 
+                }
+				</section>
+
+				{/* <figure onClick={() => handleClick(product)} >
+				{  state.cart.includes(product)  ? <img className="disabled add-to-cart-btn" src={addedCart} alt="added to cart" />  : <img className="add-to-cart-btn pointer" src={addCart} alt="add to cart" /> }
+				</figure> */}
 			</div>
 		</div>
 	);

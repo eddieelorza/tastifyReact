@@ -1,6 +1,6 @@
 import React, {useRef} from 'react';
 import '@styles/Login.scss';
-
+import logo from '../Assets/logos/LogoTastify.svg'
 function Login() {
   const form = useRef(null);
 
@@ -17,7 +17,7 @@ function Login() {
 	return (
 		<div className="Login">
 			<div className="Login-container">
-				<img src='' alt="logo" className="logo" />
+				<img src={logo} alt="logo" className="logo" />
 				<form action="/" className="form" ref={form}>
 					<label htmlFor="email" className="label">Email address</label>
 					<input type="text" name="email" placeholder="tastify@example.cm" className="input input-email" />

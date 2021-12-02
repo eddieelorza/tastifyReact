@@ -4,8 +4,15 @@
 	width: 360px;
 	padding: 24px;
 	box-sizing: border-box;
-	position: absolute;
+	position: fixed;
 	right: 0;
+	background-color: white;
+	top: 60px;
+	bottom: 0;
+	border-radius: 6px;
+	z-index: 1;
+	overflow: scroll;
+	border: 1px solid var(--very-light-pink);
 }
 .title-container {
 	display: flex;
@@ -56,4 +63,8 @@
 	.MyOrder {
 		width: 100%;
 	}
+}
+
+.pointer{
+	cursor: pointer;
 }

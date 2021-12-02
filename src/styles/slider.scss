@@ -1,0 +1,87 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  .slider__container{
+    margin-bottom: 40px;
+  }
+  .slider__title{
+    color: #FE5F5F;
+    font-size: 30px;
+    margin-top: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: center;
+    width: 100%;
+}
+  .slick-track {
+    display: flex;
+  }
+  .slick-slider {
+    display: flex;
+    align-items: center;
+    max-width: 70%;
+    margin: 0 auto;
+    
+  }
+  
+  .slick-slide {
+    padding-right: 10px;
+  }
+  
+  .slick-slide:last-child {
+    padding-right: 0;
+  }
+  .slick-slide img {
+    display: block;
+  }
+  .slick-list {
+    margin: 0 15px;
+  }
+
+  .slick-prev {
+    width: 30px;
+    left: -10;
+    top: 40%;
+    position: absolute;
+    height: 30px;
+    background: rgb(71, 255, 184);
+    
+    border-radius: 50%;
+   
+  }
+  
+  .slick-next {
+    width: 30px;
+    right: -40;
+    top: 40%;
+    position: absolute;
+    height: 30px;
+    background: rgb(71, 255, 184);
+
+    border-radius: 50%;
+  
+  }
+  
+  .slick-prev:focus,
+  .slick-prev:hover,
+  .slick-next:hover,
+  .slick-next:focus {
+    color: transparent;
+    outline: none;
+    background: rgb(117, 164, 132);
+  }
+  .product-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+//    .hidden {
+//     position: absolute;
+//     left: -10000px;
+//     top: auto;
+//     width: 100px;
+//     height: 100px;
+//     overflow: hidden;
+//   } 
+  
+

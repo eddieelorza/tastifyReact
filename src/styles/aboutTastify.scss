@@ -1,0 +1,28 @@
+
+.about--tastify {
+	background-color: #FE5F5F;
+	color: white;
+
+    text-align: center;
+    
+  }
+.about--tastify p{
+	margin: 50px;
+    
+  }
+
+  .about_img {
+
+      height: 50vh;
+      background-image: url(https://images.pexels.com/photos/3186654/pexels-photo-3186654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover;
+
+  }
+
+  @media (min-width: 200px) and (max-width: 850px){
+    .about_img {
+        height: 20vh;
+    }
+  }

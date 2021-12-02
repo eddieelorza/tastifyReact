@@ -1,0 +1,44 @@
+@import 'vars';
+.mobile-menu {
+    padding:24px; 
+    position: absolute; 
+    flex-direction: column;
+    
+    background-color: white;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    top: 60px;
+  
+;
+  }
+  .mobile-menu a {
+    text-decoration: none;
+   
+    color: var(--black);
+   
+    font-weight: bold;
+ 
+  }
+  .mobile-menu ul {
+    padding: 0;
+    margin: 24px 0 0;
+    list-style: none;
+  }
+  .mobile-menu ul:nth-child(1) {
+    border-bottom: 1px solid var(--very-light-pink);
+  }
+  .mobile-menu ul li {
+    margin-bottom: 24px;
+  }
+  .email {
+    font-size: var(--sm);
+    font-weight: 300 !important;
+  }
+  .sign-out {
+    font-size: var(--sm);
+    color: var(--hospital-green) !important;
+  }
