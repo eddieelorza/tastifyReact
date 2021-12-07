@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import AppContext from '../context/AppContext'; 
-import '../styles/OrderItem.scss';
+import '../styles/orderItem.scss';
 import closeIcon from "../Assets/icons/icon_close.png";
 
 function OrderItem ({product}){

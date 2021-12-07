@@ -1,10 +1,10 @@
 import React, {useState,useContext}  from 'react';
 import '@styles/Navbar.scss';
-import logo from '@logos/Logo.svg';
-import shoppingCart from '@icons/icon_shopping_cart.svg';
+import logo from '../Assets/logos/logo.svg';
+import shoppingCart from '../Assets/icons/icon_shopping_cart.svg';
 import MyOrder from '../containers/MyOrder';
-import calendar from '@icons/calendar.svg';
-import menu from '@icons/icon_menu.svg';
+import calendar from '../Assets/icons/calendar.svg';
+import menu from '../Assets/icons/icon_menu.svg';
 import AppContext from '../context/AppContext';
 import Menu from '../components/Menu';
 import MobileMenu from '../components/mobileMenu'
