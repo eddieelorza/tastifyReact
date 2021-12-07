@@ -20,7 +20,7 @@ function aboutaTastify() {
 			 
 			</div>
 			<div className="col-12 col-lg-6 pl-0 pr-0 about_img">
-				hola
+		
 			</div>
 		  </div>
 		</section>

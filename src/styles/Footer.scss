@@ -1,0 +1,29 @@
+.footer {
+    padding: 10px;
+    color: white;
+    background-color: #dc4747;
+    margin-top: 90px;
+    margin: auto;
+}
+.container section div{
+    margin-left: 70px;
+}
+.container section div ul{
+    list-style: none;
+    margin-left: -60px;
+}
+
+.social-media {
+    color: rgb(255, 255, 255);
+    list-style: none;
+}
+.footer .social-media li{
+    align-items: center;
+    margin-right: 20px;
+    display: inline;
+}
+.footer .social-media img{
+    align-self: center;
+    width: 40px;
+    height: 40px;
+}

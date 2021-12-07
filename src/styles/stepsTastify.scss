@@ -1,0 +1,43 @@
+
+  .tastify--steps .row > div {
+    flex: 1 0 calc(50% - 1rem);
+}
+@media (min-width: 908px) {
+    .tastify--steps .row > div {
+        flex: 0 1 calc(20% - 1rem);
+
+}
+}
+
+
+
+.tastify--steps .steps--description {
+    height: 20rem;
+    margin: 25px;
+    border-radius: 15px;
+    background-size: cover;
+}
+.tastify--steps .steps--description  span {
+    font-weight: 700;
+}
+.tastify--steps .tastify--step_img1 {
+    background-image: url(https://images.pexels.com/photos/842571/pexels-photo-842571.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-position: center;
+}
+.tastify--steps .tastify--step_img2 {
+    background-image: url(https://images.pexels.com/photos/842571/pexels-photo-842571.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: cover;
+    background-position: center;
+}
+.tastify--steps .tastify--step_img3 {
+    background-image: url(https://images.pexels.com/photos/842571/pexels-photo-842571.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: cover;
+    background-position: center;
+}
+.tastify--steps .tastify--step_img4 {
+    background-image: url(https://images.pexels.com/photos/842571/pexels-photo-842571.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	position: relative;
+}
