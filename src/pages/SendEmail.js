@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/SendEmail.scss';
+import '../styles/sendEmail.scss';
 
 function SendEmail (){
 	return (

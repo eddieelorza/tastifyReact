@@ -1,12 +1,12 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "@components/Header";
-import Categories from "@components/Categories";
+import Categories from "../components/categories";
 import Slider from "../components/slider";
 import Tastify from "../containers/aboutTastify";
-import StepsTastify from "../containers/StepsTastify";
+import StepsTastify from "../containers/stepsTastify";
 import JoinTastify from "../components/joinTastify";
-import Footer from "../components/Footer";
+import Footer from "../components/footer";
 
 
 function Home() {

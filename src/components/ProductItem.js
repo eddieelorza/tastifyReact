@@ -1,8 +1,8 @@
 import React, {useContext} from 'react';
 import '../styles/ProductItem.scss';
 import AppContext from '../context/AppContext';
-import addCart from '@icons/bt_add_to_cart.svg'
-import addedCart from '@icons/bt_added_to_cart.svg'
+// import addCart from '@icons/bt_add_to_cart.svg'
+// import addedCart from '@icons/bt_added_to_cart.svg'
 
 function ProductItem({product}){
 	const { state, addToCart } = useContext(AppContext);
