@@ -7,11 +7,11 @@ import Desayunos from '../Assets/categories/Desayunos.svg';
 import Tacos from '../Assets/categories/Tacos.svg';
 import Snacks from '../Assets/categories/Snacks.svg';
 import Saludables from '../Assets/categories/Saludables.svg';
-import Restaurantes from '../Assets/categories/Restaurantes.svg';
+import Restaurantes from '../Assets/categories/restaurantes.svg';
 import Postres from '../Assets/categories/Postres.svg';
 import AltaCocina from '../Assets/categories/AltaCocina.svg';
 import Bebidas from '../Assets/categories/Bebidas.svg';
-import Panaderia from '../Assets/categories/Panaderia.svg';
+import Panaderia from '../Assets/categories/panaderia.svg';
 import Vegetariana from '../Assets/categories/Vegetariana.svg';
 
 
