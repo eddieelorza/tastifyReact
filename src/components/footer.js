@@ -10,7 +10,7 @@ function Footer  () {
         <footer className="footer">
 		<section className="container">
 			<section className="row align-items-center justify-content-md-center">
-			  <div className="col-sm-2 align-center">
+			  <div className="col-sm-4 align-center logoTastify">
 				  <img src={tastifyLogo} alt=""/>
 				 
 			  </div>
@@ -25,7 +25,7 @@ function Footer  () {
 			  <div className="col">
 				 
 				  <ul> 
-					  <h3>Enlaaces</h3>
+					  <h3>Enlaces</h3>
 					  <li>Registrarse</li>
 					  <li>Categorias</li>
 					  <li>Conocenos</li>
