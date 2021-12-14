@@ -28,7 +28,7 @@ function ProductItem({product}){
 				<section onClick={() => handleClick(product)}>
 				{  state.cart.includes(product)  ?
 					<div className="add--box" >
-									<a  className="">Agregado</a>
+									<a  className="disabled">Agregado</a>
 				    </div> :
 						<div className="add--box" >
 						<a  className="">Agregar al Carrito</a>
@@ -37,7 +37,7 @@ function ProductItem({product}){
 				</section>
 
 				{/* <figure onClick={() => handleClick(product)} >
-				{  state.cart.includes(product)  ? <img className="disabled add-to-cart-btn" src={addedCart} alt="added to cart" />  : <img className="add-to-cart-btn pointer" src={addCart} alt="add to cart" /> }
+				{  state.cart.includes(product)  ? <img className=" add-to-cart-btn" src={addedCart} alt="added to cart" />  : <img className="add-to-cart-btn pointer" src={addCart} alt="add to cart" /> }
 				</figure> */}
 			</div>
 		</div>

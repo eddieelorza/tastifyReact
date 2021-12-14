@@ -4,6 +4,9 @@ import '../styles/Header.scss';
 function Header() {
     return(
 		<header className='bitcoin-img-container'>
+		<section className='deco'>
+			
+		
 		<div className="header--title-container">
 		  <h1>Tu comida cuando quieras, donde quieras.</h1>
 		  <p>
@@ -11,6 +14,7 @@ function Header() {
 		  </p>
 
 		</div>
+		</section>
 	  </header>
 				 
 		

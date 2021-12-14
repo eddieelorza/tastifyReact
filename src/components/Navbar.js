@@ -44,10 +44,10 @@ function NavBar() {
     <div className="navbar-right">
       <ul>
         <li className="navbar-email" onClick={()=>toggleMenu()}>
-          example@tastifyy.com
+          example@tastify.com
         </li>
-        <li className="navbar-shopping-cart">
-          <img src={calendar} alt="shopping cart"/>
+        <li className="navbar-shopping-cart disabled">
+          <img src={calendar} alt="calendar"/>
           <div>1</div>
         </li>
         <li className="navbar-shopping-cart" 

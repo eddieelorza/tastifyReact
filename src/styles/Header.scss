@@ -7,10 +7,26 @@ header {
 	justify-content: center;
 	width: 100%;
 	min-width: 320px;
-	height: 334px;
+	height: 404px;
 	text-align: center;
-   background-image:('https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') ;
+    background: url(https://images.pexels.com/photos/5836429/pexels-photo-5836429.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center center / cover no-repeat fixed;
+	
   }
+header .deco{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	content:'';
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+     width: 100%;
+
+	background-color: rgba(0,0,0,0.6);
+  }
+
   header img {
 	width: 151px;
 	height: 24px;
@@ -46,9 +62,9 @@ header {
 	z-index: -2;
 	
 	min-width: 320px;
-	height: 50vh;
-	background-color: rgb(255, 74, 74);
-
+	height: 70vh;
+	background-color: blue;
+    
 	text-align: center;
   }
  
