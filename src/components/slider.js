@@ -34,7 +34,7 @@ function MultipleItems ({categoria}){
     const products = useGetProducts(API)
     const settings = {
       dots: true,
-      infinite: false,
+      infinite: true,
       speed: 500,
       slidesToShow: 4,
       slidesToScroll: 4,
@@ -72,19 +72,14 @@ function MultipleItems ({categoria}){
     
   const [productsList, setProductsList] = useState(categoria)
 
-  useEffect(() => {
-    if ( categoria !== "") {
-      setProductsList(products.filter(product => product.category === categoria))
-    } if (productsList === "") {
-      setProductsList(products.filter(product => product.category === products))
-    }
+// render products donde si product list esta vacio mostrar todos los productos aleatorio y si no se le da click para que muestre solo los productos de esa categoria
   
+  useEffect(() => { 
+    let filteredProducts = products.filter(product => product.category === categoria)
+    setProductsList(filteredProducts)
+  }, [categoria])
+
     
-  }, [categoria, products])
-
-
-
-
 
     return (
    
@@ -92,9 +87,12 @@ function MultipleItems ({categoria}){
         <h2 className="slider__title"> PRODUCTOS </h2>
         <div className='ProductList'>
        <Slider {...settings}>
-        {productsList.map(product => (
-          <ProductItem key={product.id} product={product} />
-        ))}
+         {/* si productslist esta vacio muestra todos los productos */}
+         {/* si no filtrar products por categoria */}
+      
+          {productsList.length === 0 ? products.map(product => <ProductItem key={product.id} product={product} />) : productsList.map(product => <ProductItem key={product.id} product={product} />)}
+
+
         </Slider>
         </div>
 

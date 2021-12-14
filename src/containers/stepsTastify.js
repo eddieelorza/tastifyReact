@@ -18,7 +18,7 @@ function stepsTastify (){
             <div className="steps--description text-light p-3 tastify--step_img3">
                  <p>Lorem <span>Lorem</span></p>
             </div>
-\
+
            
         </div>
        </section>

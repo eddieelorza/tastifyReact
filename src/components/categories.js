@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import '../styles/Categories.scss';
+import "bootstrap/dist/css/bootstrap.min.css";
 import Sushi from '../Assets/categories/Sushi.svg';
 import Hamburguesas from '../Assets/categories/Hamburguesas.svg';
 import Pizzas from '../Assets/categories/pizzas.svg';
