@@ -25,13 +25,13 @@ function NavBar() {
 
       <ul>
         <li>
-          <a href="/">INICIO</a>
+          <a href="#">INICIO</a>
         </li>
         <li>
-          <a href="/">CATEGORÍAS</a>
+          <a href="#categories">CATEGORÍAS</a>
         </li>
         <li>
-          <a href="" >CONOCENOS</a>
+          <a href="#aboutUs" >CONOCENOS</a>
         </li>
         <li>
           <a href="#"onClick={() => setModalShow(true)}>CONTACTO</a>

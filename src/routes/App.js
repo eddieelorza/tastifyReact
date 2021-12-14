@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Layout from '../containers/Layout';
 import Home from '../pages/Home';
 import Login from '../pages/login';
+import Categories from '../components/categories';
 import PasswordRecovery from '../pages/PasswordRecovery';
 import SendEmail from '../pages/SendEmail';
 import NewPassword from '../pages/NewPassword';
@@ -25,6 +26,7 @@ function App (){
 				<Switch>
 					<Route exact path="/" component={Home} />
 					<Route exact path="/login" component={Login} />
+					<Route exact path="/categories" component={Categories} />
 					<Route exact path="/password-recovery" component={PasswordRecovery} />
 					<Route exact path="/send-email" component={SendEmail} />
 					<Route exact path="/new-password" component={NewPassword} />
