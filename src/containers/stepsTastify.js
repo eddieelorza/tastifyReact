@@ -8,7 +8,7 @@ function stepsTastify (){
 	  <section className="tastify--steps container mt-5">
         <h3 className="text-center categories__title" >COMO USAR TASTIFY</h3>
 
-        <div className="hover-tastify row justify-content-evenly mt-4 deco">
+        <div className=" row justify-content-evenly mt-4">
             <div className="steps--description text-light p-3 tastify--step_img1">
                  <p>Lorem <span>Lorem</span></p>
             </div>
@@ -18,9 +18,7 @@ function stepsTastify (){
             <div className="steps--description text-light p-3 tastify--step_img3">
                  <p>Lorem <span>Lorem</span></p>
             </div>
-            {/* <div className="steps--description text-light p-3 tastify--step_img4">
-                 <p>Lorem <span>Lorem</span></p>
-            </div> */}
+\
            
         </div>
        </section>
