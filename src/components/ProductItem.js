@@ -13,13 +13,16 @@ function ProductItem({product}){
 		addToCart(item);
 	}
 
+
 	return (
 		<div className="ProductItem">
 			<img src={product.image} alt={product.name} />
 			<div className="product-info">
 				<div>
 					<p>{product.name}</p>
+					
 					<p>${product.price}</p>
+
 					
 				</div>
 				<section onClick={() => handleClick(product)}>

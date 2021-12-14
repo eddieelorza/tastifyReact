@@ -1,11 +1,12 @@
 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import React, { Component } from "react";
+import React, { Component, useEffect, useState } from "react";
 import ProductItem from '../components/ProductItem';
 import useGetProducts from '../hooks/useGetProducts';
 import '../styles/slider.scss'
 import Slider from "react-slick";
+import Categorias from "./categories";
 // function SampleNextArrow(props) {
 //     const { className, style, onClick } = props;
 //     return (
@@ -29,7 +30,7 @@ import Slider from "react-slick";
 //   }
   const API = 'https://tastifypruebasv1.herokuapp.com/api/products/'
 
-function MultipleItems (){
+function MultipleItems ({categoria}){
     const products = useGetProducts(API)
     const settings = {
       dots: true,
@@ -67,15 +68,33 @@ function MultipleItems (){
    
       
     };
-    return (
+
     
+  const [productsList, setProductsList] = useState(categoria)
+
+  useEffect(() => {
+    if ( categoria !== "") {
+      setProductsList(products.filter(product => product.category === categoria))
+    } if (productsList === "") {
+      setProductsList(products.filter(product => product.category === products))
+    }
+  
+    
+  }, [categoria, products])
+
+
+
+
+
+    return (
+   
       <section className="slider__container">
         <h2 className="slider__title"> PRODUCTOS </h2>
         <div className='ProductList'>
        <Slider {...settings}>
-        {products.map(product => (
-					<ProductItem product={product} key={product.id}/>
-				))}
+        {productsList.map(product => (
+          <ProductItem key={product.id} product={product} />
+        ))}
         </Slider>
         </div>
 

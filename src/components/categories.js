@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../styles/Categories.scss';
 import Sushi from '../Assets/categories/Sushi.svg';
 import Hamburguesas from '../Assets/categories/Hamburguesas.svg';
@@ -15,83 +15,109 @@ import Panaderia from '../Assets/categories/panaderia.svg';
 import Vegetariana from '../Assets/categories/Vegetariana.svg';
 
 
-function Menu() {
+
+function Categorias({setFilterList}) {
+    
+
+    const [categories, setCategories] = useState([
+        {
+            id: 1,
+            name: 'Sushi',
+            image: Sushi,
+
+        },
+        {
+            id: 2,
+            name: 'Hamburguesa',   //
+            image: Hamburguesas,    
+        },
+        {   
+            id: 3,
+            name: 'Pizzas',
+            image: Pizzas,
+        },
+        {
+            id: 4,  //                  
+            name: 'Desayunos',
+            image: Desayunos,
+        },
+        {
+            id: 5,
+            name: 'Tacos',
+            image: Tacos,
+        },
+        {
+            id: 6,
+            name: 'Snacks',
+            image: Snacks,
+        },
+        {
+            id: 7,
+            name: 'Saludables',
+            image: Saludables,
+        },
+        {
+            id: 8,
+            name: 'Restaurantes',
+            image: Restaurantes,
+        },
+        {
+            id: 9,
+            name: 'Postres',
+            image: Postres,
+        },
+        {
+            id: 10,
+            name: 'Alta Cocina',
+            image: AltaCocina,
+        },
+        {
+            id: 11,
+            name: 'Bebidas',
+            image: Bebidas,
+        },
+        {
+            id: 12,
+            name: 'Panaderia',
+            image: Panaderia,
+        },
+        {
+            id: 13,
+            name: 'Vegetariana',
+            image: Vegetariana,
+        },
+    ]);
+
+    // const[filterList, setFilterList] = useState(categories);
+    // function handleClick(categories) {
+    //     const newFilterList = filterList.filter(category => category.name === categories);
+    //     setFilterList(newFilterList);
+
+
+    // }
+
+
+    
+
   return (
+
     <section id="categories" className="container mt-4  py-3">
     <h3 className="text-center categories__title" >CATEGORIAS</h3>
     <section className="main-categories--container">
       <div className="categories--container">
-          <div className="categories--item active">
-              <a id="Pizzas" ><img className="categorie-item__img" src={Pizzas} alt="category"/>
-          </a>
-          <p className="main-categorie_text">Pizza</p>
-          </div>
-          <div className="categories--item">
-              <a id="Hamburguesas" ><img className="categorie-item__img" src={Hamburguesas} alt="category"/>
-          </a>
-          <p className="main-categorie_text">Hamburguesas</p>
-          </div>
-          <div className="categories--item">
-              <a id="Sushi"><img className="categorie-item__img" src={Sushi} alt="category"/>
-          </a>
-          <p className="main-categorie_text" >Sushi</p>
-          </div>
-          <div className="categories--item">
-              <a href="#" ><img className="categorie-item__img" src={Desayunos} alt="category"/>
-          </a>
-          <p className="main-categorie_text">Desayunos</p>
-          </div>
-          <div className="categories--item">
-              <a href="#" ><img className="categorie-item__img" src={Tacos} alt="category"/>
-          </a>
-          <p className="main-categorie_text">Tacos</p>
-          </div>
-          <div className="categories--item">
-              <a href="#" ><img className="categorie-item__img" src={Snacks} alt="category"/>
-          </a>
-          <p className="main-categorie_text">Snacks</p>
-          </div>
-          <div className="categories--item">
-              <a href="#" ><img className="categorie-item__img" src={Saludables} alt="category"/>
-          </a>
-          <p className="main-categorie_text">Saludables</p>
-          </div>
-          <div className="categories--item">
-              <a href="#" ><img className="categorie-item__img" src={Restaurantes} alt="category"/>
-          </a>
-          <p className="main-categorie_text">Restaurantes</p>
-          </div>
-          <div className="categories--item">
-              <a href="#" ><img className="categorie-item__img" src={Postres} alt="category"/>
-          </a>
-          <p className="main-categorie_text">Postres</p>
-          </div>
-          <div className="categories--item">
-              <a href="#" ><img className="categorie-item__img" src={Vegetariana} alt="category"/>
-          </a>
-          <p className="main-categorie_text">Vegetariana</p>
-          </div>
-          <div className="categories--item">
-              <a href="#" ><img className="categorie-item__img" src={AltaCocina} alt="category"/>
-          </a>
-          <p className="main-categorie_text">Alta Cocina</p>
-          </div>
-          <div className="categories--item">
-              <a href="#" ><img className="categorie-item__img" src={Panaderia} alt="category"/>
-          </a>
-          <p className="main-categorie_text">Panaderia</p>
-          </div>
-          <div className="categories--item">
-              <a href="#" ><img className="categorie-item__img" src={Bebidas} alt="category"/>
-          </a>
-          <p className="main-categorie_text">Bebidas</p>
-          </div>
-          
+        {categories.map(category => (
+
+            <div onClick={() => setFilterList(category.name)} className="categories--item active" key={category.id}>
+                <img className="categorie-item__img" src={category.image} alt={category.name} />
+                <p className="main-categorie_text">{category.name}</p>
+            </div>
+        ))}
         </div>
-  </section>
-  </section>
+    </section>
+    </section>
+    
 
   );
 }
 
-export default Menu;
+export default Categorias;

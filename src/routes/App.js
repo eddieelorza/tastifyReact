@@ -24,12 +24,12 @@ function App (){
 			<Layout>
 				<Switch>
 					<Route exact path="/" component={Home} />
-					<Route exact path="https://tastify.com.mx/login" component={Login} />
+					<Route exact path="/login" component={Login} />
 					<Route exact path="/password-recovery" component={PasswordRecovery} />
 					<Route exact path="/send-email" component={SendEmail} />
 					<Route exact path="/new-password" component={NewPassword} />
 					<Route exact path="/account" component={MyAccount} />
-					<Route exact path="https://tastify.com.mx/signup" component={CreateAccount} />
+					<Route exact path="/signup" component={CreateAccount} />
 					<Route exact path="/checkout" component={Checkout} />
 					<Route exact path="/orders" component={Orders} />
 					<Route path="*" component={NotFound} />

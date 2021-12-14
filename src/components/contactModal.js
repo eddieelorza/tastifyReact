@@ -30,9 +30,9 @@ function contactModal(props) {
             <form onSubmit={handleSubmit}>
          <div className="mb-3">
          <label htmlFor="email" className="form-label">
-             Email address
+            Correo Electronico
          </label>
-         <input type="email" className="form-control" id="email" name="email"placeholder="name@example.com"/>
+         <input type="email" className="form-control" id="email" name="email"placeholder="tastify@example.com"/>
          </div>
          <ValidationError 
         prefix="Email" 
@@ -41,7 +41,7 @@ function contactModal(props) {
         
         />
          <div className="mb-3">
-         <label htmlFor="exampleFormControlTextarea1" className="form-label">Example textarea</label>
+         <label htmlFor="exampleFormControlTextarea1" className="form-label">Deja tu mensaje</label>
          <textarea className="form-control" id="message" name="message" rows="3" />
          <ValidationError 
         prefix="Message" 
